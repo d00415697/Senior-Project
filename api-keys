@@ -1,0 +1,2 @@
+Invoke-WebRequest -Uri "https://api.api-ninjas.com/v1/exercises?muscle=chest" -Headers
+ @{ "X-Api-Key" = "/F0lTVR38OcAKKBfUU0fug==EYiYkhM4vM8W436A" }
