@@ -1,0 +1,4 @@
+{
+  "endpoint": "api/cold-otter",
+  "root": "api/curl"
+}

@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
-import exercises from '../assets/data/exercises.json';
 import { Stack } from 'expo-router';
 import { useState } from 'react';
 import { gql } from 'graphql-request';
+// import exercises from '../assets/data/exercises.json';
 import { useQuery } from '@tanstack/react-query';
 import graphqlClient from '../src/components/graphqlClient';
 import NewSetInput from '../src/components/NewSetInput';
@@ -21,7 +21,7 @@ const exerciseQuery = gql`
 
 export default function ExerciseDetailsScreen(){
     const {name} = useLocalSearchParams();
-    const {data, isLoading} = useQuery({
+    const {data, isLoading, error} = useQuery({
       queryKey: ['exercises', name],
       queryFn: () => graphqlClient.request(exerciseQuery, { name }),
     });
@@ -32,6 +32,9 @@ export default function ExerciseDetailsScreen(){
       return <ActivityIndicator />;
     }
 
+    if (error){
+      return <Text>Failed to fetch data</Text>;
+    }
     const exercise = data.exercises[0];
 
     if (!exercise) {

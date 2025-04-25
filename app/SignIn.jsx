@@ -1,3 +1,4 @@
+import { Link } from 'expo-router';
 import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet, useWindowDimensions, ScrollView} from 'react-native';
 import Logo from '../assets/fitness-buddy.jpg';
