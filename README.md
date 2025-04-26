@@ -60,3 +60,26 @@ Local file: api/curl/index.graphql
 Endpoint: https://murieji.us-east-a.ibm.stepzen.net/api/open-lambkin/__graphql
 StepZen auto-generates GraphQL types from imported curl schema
 
+# Planned Features
+- GPS Cardio Tracker
+Log runs, walks, or bike rides with real-time map data
+- Social Activity Feed
+Share progress or workouts with friends in a community tab
+- Music Integration
+Add Spotify/YouTube playlists to motivate workouts
+
+# Author
+Deray Lowe
+Senior Project
+Utah Tech University — CS 4600
+Spring 2025
+Email: deraylowe@utahtech.com
+
+# Acknowledgements
+- Edamam API
+- StepZen
+- Expo
+
+# Professors and peers from Utah Tech CS Department
+- Curtis Larsen
+  
