@@ -73,7 +73,7 @@ Deray Lowe
 Senior Project
 Utah Tech University — CS 4600
 Spring 2025
-Email: deraylowe@utahtech.com
+Email: d00415697@utahtech.edu
 
 # Acknowledgements
 - Edamam API
